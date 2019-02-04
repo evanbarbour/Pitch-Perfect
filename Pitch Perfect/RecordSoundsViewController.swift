@@ -40,7 +40,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         return paths[0]
     }
     
-//create the filePath for the recording by appending the filename onto the documents directory, add the delegation protocol, change the "recording" label to show that audio is being recorded, and record it safely
+    //create the filePath for the recording by appending the filename onto the documents directory, add the delegation protocol, change the "recording" label to show that audio is being recorded, and record it safely (source: StackOverflow)
     
     func startRecording() {
         let audioFilename = getDocumentsDirectory().appendingPathComponent("recording.m4a")

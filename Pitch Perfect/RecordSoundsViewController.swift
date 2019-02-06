@@ -56,7 +56,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             audioRecorder.delegate = self
             audioRecorder.record()
             recordingLabel.text = "OK, recording..."
-            recordingButton.isEnabled = true
         } catch {
             finishRecording(success: false)
         }
